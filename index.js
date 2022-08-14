@@ -16,7 +16,11 @@ function mainMenu (){
             case 'View all departements':
                 viewAllDepartments()
                 break;
-
+                   
+                case 'view all roles':
+                    viewAllRoles()
+                    break;
+                
                     case 'View all employees':
                     viewAllEmployees()
                     break;

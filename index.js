@@ -16,7 +16,27 @@ function mainMenu (){
             case 'View all departements':
                 viewAllDepartements()
                 break;
-                
+
+                    case 'View all employees':
+                    viewAllEmployees()
+                    break;
+                  
+                    case 'Add a department': 
+                    addADepartment()
+                    break;
+                  
+                    case  'Add a roll':
+                    addARoll()
+                    break;
+                            
+                    case  'Add an employee':
+                    addAnEmployee()
+                    break;
+                  
+                    case 'Update an employee role':
+                    updateEmployeeRole()
+                    break;  
         }
-    }
+    })
 }
+mainMenu()

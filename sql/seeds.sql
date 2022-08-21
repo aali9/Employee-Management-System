@@ -1,38 +1,33 @@
-USE employee_management_db;
+use employees_db;
 
-INSERT INTO department (department_name)
-VALUES ("Sales"),
-        ("Design"),
-        ("Marketing"),
-        ("IT");
+INSERT INTO department
+    (name)
+VALUES
+    ('Sales'),
+    ('Legal'),
+    ('IT'),
+    ('Finance');
 
-INSERT INTO roles (title, salary, department_id)
-VALUES ("Sales Executive", 50000, 1),
-        ("Junior Sales Team Member", 23000, 1),
-        ("Sales Consultant", 35000, 1),
-        ("Head Graphics Technician", 40000, 2),
-        ("Graphics Engineer", 50500, 2),
-        ("Photoshop Wiz", 30000, 2),
-        ("Head Marketeer", 43000, 3),
-        ("Marketing Consultant", 35000, 3),
-        ("Telesales", 15000, 3),
-        ("Javascript Developer", 50001, 4),
-        ("Front-End Developer", 40000, 4),
-        ("Google User", 10000, 4);
+INSERT INTO role
+    (title, salary, department_id)
+VALUES
+    ('Sales Consultant', 50000, 1),
+    ('Sales Representative', 40000, 1),
+    ('Legal Advisor', 60000, 2),
+    ('Lawyer', 70000, 2),
+    ('IT Project Manager', 55000, 3),
+    ('Software Engineer', 45000, 3),
+    ('Auditor', 35000, 4),
+    ('Accountant', 26000, 4);
 
-INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Jack", "Chan", 4, 1),
-        ("Wendy", "Daniels", 1, 1),
-        ("Chris", "Biscuit", 2, 1),
-        ("Sally", "Fox", 2, 2),
-        ("Chris", "Beckett", 3, 4),
-        ("Alex", "Krakowski", 3, 4),
-        ("Joyce", "Kallahan", 5, 2),
-        ("Hendrick", "Bozwell", 6, 7),
-        ("Chimango", "Akindawe", 6, 7),
-        ("Katy", "Beckett", 7, 1),
-        ("Madeline", "Fine", 8, 10),
-        ("Madeline", "Knottoke", 9, 11),
-        ("Bryce", "Bakwilla", 10, 1),
-        ("Jessop", "McKenzie", 11, 13),
-        ("Haden", "Patisierre", 12, 14);
+INSERT INTO employee
+    (first_name, last_name, role_id, manager_id)
+VALUES
+    ('Luca', 'Terry', 1, NULL),
+    ('Darius', 'Stubbs', 2, 1),
+    ('Makayla', 'Grimes', 3, NULL),
+    ('Olivia', 'Hood', 4, 3),
+    ('Raihan', 'Workman', 5, NULL),
+    ('Bryan', 'Cherry', 6, 5),
+    ('Ryley', 'Cresswell', 7, NULL),
+    ('Eloisa', 'Bush', 8, 7);
